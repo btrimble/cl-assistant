@@ -1,0 +1,14 @@
+{
+  "name": "craigslist assistant",
+  "version" : "0.0.3",
+  "description": "A craigslist search assistant to allow you to group listings, mark listings as read, save listings, record e-mails, cache pictures, etc..A craigslist search assistant to allow you to group listings, mark listings as read, save listings, record e-mails, cache pictures, etc..",
+  "permissions": [
+    "tabs", "http://*.craigslist.org/*", "http://craigslist.org/*"
+  ],
+    "content_scripts": [{
+        "js": ["cl_assistant.js"],
+        "matches": ["http://*.craigslist.org/*","http://craigslist.org/*"]
+    }],
+
+  "manifest_version": 2
+}
